@@ -10,4 +10,6 @@ FROM scratch
 
 COPY --from=build /go/bin/govanityurls /govanityurls
 
+EXPOSE 8080
+
 ENTRYPOINT ["/govanityurls"]
